@@ -1,0 +1,52 @@
+$ make
+flex src/scanner.l
+gcc lex.yy.c -lfl
+src/scanner.l:38:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+   38 | main( argc, argv )
+      | ^~~~
+./a.out < test/square.pl0
+An identifier: VAR
+An identifier: x
+An identifier: ,
+An identifier: squ
+An identifier: ;
+An identifier: PROCEDURE
+An identifier: square
+An identifier: ;
+An identifier: BEGIN
+An identifier: squ
+An identifier: :
+An identifier: =
+An identifier: x
+An identifier: *
+An identifier: x
+An identifier: END
+An identifier: ;
+An identifier: BEGIN
+An identifier: x
+An identifier: :
+An identifier: =
+An integer: 1 (1)
+An identifier: ;
+An identifier: WHILE
+An identifier: x
+An identifier: <
+An identifier: =
+An integer: 10 (10)
+An identifier: DO
+An identifier: BEGIN
+An identifier: CALL
+An identifier: square
+An identifier: ;
+An identifier: !
+An identifier: squ
+An identifier: ;
+An identifier: x
+An identifier: :
+An identifier: =
+An identifier: x
+An operator: +
+An integer: 1 (1)
+An identifier: END
+An identifier: END
+An identifier: .
