@@ -26,7 +26,7 @@ if|then|begin|end|procedure|function        {
 
 {ID}        printf( "An identifier: %s\n", yytext );
 
-"+"|"-"|"*"|"/"   printf( "An operator: %s\n", yytext );
+"+"|"-"|"*"|"/"|","|";"|":"|"="|"<"|"!"|"."  printf( "An operator: %s\n", yytext );
 
 
 [ \t\n]+          /* eat up whitespace */
